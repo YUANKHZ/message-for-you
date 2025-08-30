@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Message on Paper</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: #f0f0f0;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    #intro-text {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    #paper {
+      width: 90%;
+      max-width: 400px;
+      background: #fff8dc;
+      border: 2px solid #ccc;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      display: none; /* Hidden initially */
+      margin-bottom: 20px;
+      text-align: left;
+      line-height: 1.5em;
+      font-size: 1em;
+      color: #333;
+      white-space: pre-wrap; /* preserves line breaks */
+    }
+
+    #showPaper {
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="intro-text">I hope you read this even if it's too late...</div>
+  <div id="paper">
+    <p id="message">
+Is there still a chance for us?
+Cause if there is I would do everything just to be with you. I'm willing to wait; I'm not rushing anything even if I'm not ready to be in a relationship for a reason, but I am willing to take a risk with you for us. I can take responsibility for my words. I'll prove to you that my love for you is not like your past or anything you've ever known; it's greater than anything, beyond compare. With me, you won't be hurt. You won't shed tears. You won't need to beg for our relationship to be fixed just because of a misunderstanding, because I know I would fix it before there would be a fight. Just know that I'm here, willing to wait for you.
+    </p>
+  </div>
+  <button id="showPaper">Open the Paper</button>
+
+  <script>
+    const button = document.getElementById('showPaper');
+    const paper = document.getElementById('paper');
+
+    button.addEventListener('click', () => {
+      paper.style.display = 'block';
+      button.style.display = 'none'; // Hide the button after clicking
+    });
+  </script>
+</body>
+</html>
